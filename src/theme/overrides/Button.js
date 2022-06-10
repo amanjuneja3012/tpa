@@ -22,6 +22,7 @@ export default function Button(theme) {
         },
         containedPrimary: {
           boxShadow: theme.customShadows.primary,
+          color:theme.palette.grey[900]
         },
         containedSecondary: {
           boxShadow: theme.customShadows.secondary,

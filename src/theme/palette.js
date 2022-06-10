@@ -10,7 +10,7 @@ function createGradient(color1, color2) {
 const PRIMARY = {
   lighter: '#C8FACD',
   light: '#5BE584',
-  main: '#00AB55',
+  main: '#00FFB2',
   dark: '#007B55',
   darker: '#005249',
 };
@@ -79,14 +79,6 @@ const GRADIENTS = {
   error: createGradient(ERROR.light, ERROR.main),
 };
 
-const CHART_COLORS = {
-  violet: ['#826AF9', '#9E86FF', '#D0AEFF', '#F7D2FF'],
-  blue: ['#2D99FF', '#83CFFF', '#A5F3FF', '#CCFAFF'],
-  green: ['#2CD9C5', '#60F1C8', '#A4F7CC', '#C0F2DC'],
-  yellow: ['#FFE700', '#FFEF5A', '#FFF7AE', '#FFF3D6'],
-  red: ['#FF6C40', '#FF8F6D', '#FFBD98', '#FFF2D4'],
-};
-
 const COMMON = {
   common: { black: '#000', white: '#fff' },
   primary: { ...PRIMARY, contrastText: '#fff' },
@@ -97,7 +89,6 @@ const COMMON = {
   error: { ...ERROR, contrastText: '#fff' },
   grey: GREY,
   gradients: GRADIENTS,
-  chart: CHART_COLORS,
   divider: GREY[500_24],
   action: {
     hover: GREY[500_8],
@@ -121,7 +112,7 @@ const palette = {
   dark: {
     ...COMMON,
     mode: 'dark',
-    text: { primary: '#fff', secondary: GREY[500], disabled: GREY[600] },
+    text: { primary: "#fff", secondary: GREY[500], disabled: GREY[600] },
     background: { paper: GREY[800], default: GREY[900], neutral: GREY[500_16] },
     action: { active: GREY[500], ...COMMON.action },
   },
